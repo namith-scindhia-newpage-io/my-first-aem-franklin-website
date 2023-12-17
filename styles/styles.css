@@ -230,11 +230,13 @@ main img {
 
 main .section {
   padding: 64px 16px;
+  
 }
 
 @media (min-width: 600px) {
   main .section {
-    padding: 64px 32px;
+    /* padding: 64px 32px; */
+    padding: 8px 24px;
   }
 }
 
@@ -248,4 +250,39 @@ main .section {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+/* my css */
+.first-section div, .second-section div, .third-section div {
+  background: #F7F7F7;
+  border: 2px solid #EDEDED;
+}
+#hello-welcome-to-franklin {
+  color: blue;
+}
+
+#adobe-franklin {
+  color: red;
+}
+
+#aem-sidekick {
+  color: green;
+}
+
+.first-section > div > p {
+  text-align: center;
+}
+
+.first-section > div > p:last-child {
+  text-align: right;
+}
+
+#another-section-title {
+  color: #ae01af;
+}
+
+.second-section picture {
+  display: inline-block;
+  height: 200px;
+  width: 400px
 }
