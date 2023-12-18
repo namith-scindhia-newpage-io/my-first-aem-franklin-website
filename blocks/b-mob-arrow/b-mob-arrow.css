@@ -1,0 +1,31 @@
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid;
+  display: inline-block;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: roboto-slab, serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.divhr {
+  border: 1px solid;
+  display: inline-block;
+  width: 1px;
+  transform: rotate(15deg);
+  border-color: #e8e4dc;
+}
+
+.divhr:last-child {
+    display: none;
+}
