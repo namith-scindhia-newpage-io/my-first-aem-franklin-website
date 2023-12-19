@@ -48,7 +48,7 @@ export default function decorate(block) {
     colorCode.remove();
 
     const divhr = document.createElement('div');
-    divhr.classList.add('divhr', 'mx-4');
+    divhr.classList.add('divhr', 'mx-lg-4');
 
     row.after(divhr);
   });

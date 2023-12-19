@@ -19,13 +19,18 @@
 }
 
 .divhr {
-  border: 1px solid;
   display: inline-block;
-  width: 1px;
-  transform: rotate(15deg);
-  border-color: #e8e4dc;
+  width: 100%;
+  transform: none;
+  border: 1px solid #e8e4dc;
 }
 
+@media (min-width: 1024px) {
+  .divhr {
+    width: 1px;
+    transform: rotate(15deg);
+  }
+}
 .divhr:last-child {
-    display: none;
+  display: none;
 }
