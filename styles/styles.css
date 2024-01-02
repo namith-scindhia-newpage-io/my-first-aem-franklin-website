@@ -40,6 +40,8 @@
 
   /* nav height */
   --nav-height: 64px;
+
+  --learn-about-an-option-button-link-color: #783384;
 }
 
 @font-face {
