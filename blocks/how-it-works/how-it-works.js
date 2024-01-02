@@ -1,7 +1,7 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
 export default function decorate(block) {
-  block.classList.add('d-flex', 'flex-column', 'flex-lg-row');
+  block.classList.add('d-flex', 'flex-column', 'flex-md-row');
 
   [...block.children].forEach((row, index) => {
     row.classList.add(
