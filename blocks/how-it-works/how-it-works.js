@@ -13,7 +13,6 @@ export default function decorate(block) {
     );
     const children = [...row.children];
     const pictureDiv = children[0];
-    const textContentDiv = children[1];
 
     const iconContainer = document.createElement('div');
     iconContainer.classList.add('how-it-works-icon', 'd-flex');
@@ -47,7 +46,12 @@ export default function decorate(block) {
 
     columnWrapper.append(imagesContainer);
 
+    const textContentDiv = document.createElement('div');
+    const textContentP = document.createElement('p');
+    textContentP.innerHTML = children[1].innerHTML;
+    textContentDiv.append(textContentP);
     textContentDiv.classList.add('how-it-works-content');
+
     columnWrapper.append(textContentDiv);
 
     row.innerHTML = columnWrapper.outerHTML;
